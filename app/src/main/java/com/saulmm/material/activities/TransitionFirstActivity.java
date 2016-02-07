@@ -1,0 +1,284 @@
+package com.saulmm.material.activities;
+
+import android.app.Activity;
+import android.app.ActivityOptions;
+import android.content.Intent;
+import android.os.Bundle;
+import android.transition.Slide;
+import android.util.Pair;
+import android.view.Gravity;
+import android.view.View;
+import android.widget.Button;
+
+import com.saulmm.material.R;
+
+public class TransitionFirstActivity extends Activity {
+
+    private View mFabButton;
+    private View mHeader;
+    Button b1;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_transition_first);
+
+        mFabButton = findViewById(R.id.fab_button);
+        mHeader = findViewById(R.id.activity_transition_header);
+
+        Slide slideExitTransition = new Slide(Gravity.BOTTOM);
+        slideExitTransition.excludeTarget(android.R.id.navigationBarBackground, true);
+        slideExitTransition.excludeTarget(android.R.id.statusBarBackground, true);
+        slideExitTransition.excludeTarget(R.id.activity_transition_header, true);
+        getWindow().setExitTransition(slideExitTransition);
+    }
+
+
+
+    public void onFabPressed(View view) {
+
+        Intent i  = new Intent (TransitionFirstActivity.this,
+            TransitionSecondActivity.class);
+
+        ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(
+            TransitionFirstActivity.this,Pair.create(mFabButton, "fab"), Pair.create(mHeader, "holder1"));
+
+        startActivity(i, transitionActivityOptions.toBundle());
+    }
+    public void IntCivil(View view) {
+
+        Intent i  = new Intent (TransitionFirstActivity.this,
+                TransitionSecActivity.class);
+
+        ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(
+                TransitionFirstActivity.this,Pair.create(mFabButton, "fab"), Pair.create(mHeader, "holder1"));
+
+        startActivity(i, transitionActivityOptions.toBundle());
+    }
+    public void IntLc(View view) {
+
+        Intent i  = new Intent (TransitionFirstActivity.this,
+                TransitionSecActivity.class);
+
+        ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(
+                TransitionFirstActivity.this,Pair.create(mFabButton, "fab"), Pair.create(mHeader, "holder1"));
+
+        startActivity(i, transitionActivityOptions.toBundle());
+    }public void IntSus(View view) {
+
+        Intent i  = new Intent (TransitionFirstActivity.this,
+                TransitionSecActivity.class);
+
+        ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(
+                TransitionFirstActivity.this,Pair.create(mFabButton, "fab"), Pair.create(mHeader, "holder1"));
+
+        startActivity(i, transitionActivityOptions.toBundle());
+    }public void IntChem(View view) {
+
+        Intent i  = new Intent (TransitionFirstActivity.this,
+                TransitionSecActivity.class);
+
+        ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(
+                TransitionFirstActivity.this,Pair.create(mFabButton, "fab"), Pair.create(mHeader, "holder1"));
+
+        startActivity(i, transitionActivityOptions.toBundle());
+    }public void IntMech(View view) {
+
+        Intent i  = new Intent (TransitionFirstActivity.this,
+                TransitionSecActivity.class);
+
+        ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(
+                TransitionFirstActivity.this,Pair.create(mFabButton, "fab"), Pair.create(mHeader, "holder1"));
+
+        startActivity(i, transitionActivityOptions.toBundle());
+    }public void ICPS(View view) {
+
+        Intent i  = new Intent (TransitionFirstActivity.this,
+                TransitionSecActivity.class);
+
+        ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(
+                TransitionFirstActivity.this,Pair.create(mFabButton, "fab"), Pair.create(mHeader, "holder1"));
+
+        startActivity(i, transitionActivityOptions.toBundle());
+    }public void IntEle(View view) {
+
+        Intent i  = new Intent (TransitionFirstActivity.this,
+                TransitionSecActivity.class);
+
+        ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(
+                TransitionFirstActivity.this,Pair.create(mFabButton, "fab"), Pair.create(mHeader, "holder1"));
+
+        startActivity(i, transitionActivityOptions.toBundle());
+    }public void BCE(View view) {
+
+        Intent i  = new Intent (TransitionFirstActivity.this,
+                TransitionSecActivity.class);
+
+        ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(
+                TransitionFirstActivity.this,Pair.create(mFabButton, "fab"), Pair.create(mHeader, "holder1"));
+
+        startActivity(i, transitionActivityOptions.toBundle());
+    }public void BME(View view) {
+
+        Intent i  = new Intent (TransitionFirstActivity.this,
+                TransitionSecActivity.class);
+
+        ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(
+                TransitionFirstActivity.this,Pair.create(mFabButton, "fab"), Pair.create(mHeader, "holder1"));
+
+        startActivity(i, transitionActivityOptions.toBundle());
+    }public void BEE(View view) {
+
+        Intent i  = new Intent (TransitionFirstActivity.this,
+                TransitionSecActivity.class);
+
+        ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(
+                TransitionFirstActivity.this,Pair.create(mFabButton, "fab"), Pair.create(mHeader, "holder1"));
+
+        startActivity(i, transitionActivityOptions.toBundle());
+    }public void BLC(View view) {
+
+        Intent i  = new Intent (TransitionFirstActivity.this,
+                TransitionSecActivity.class);
+
+        ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(
+                TransitionFirstActivity.this,Pair.create(mFabButton, "fab"), Pair.create(mHeader, "holder1"));
+
+        startActivity(i, transitionActivityOptions.toBundle());
+    }public void Cal(View view) {
+
+        Intent i  = new Intent (TransitionFirstActivity.this,
+                TransitionSecActivity.class);
+
+        ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(
+                TransitionFirstActivity.this,Pair.create(mFabButton, "fab"), Pair.create(mHeader, "holder1"));
+
+        startActivity(i, transitionActivityOptions.toBundle());
+    }public void Diff(View view) {
+
+        Intent i  = new Intent (TransitionFirstActivity.this,
+                TransitionSecActivity.class);
+
+        ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(
+                TransitionFirstActivity.this,Pair.create(mFabButton, "fab"), Pair.create(mHeader, "holder1"));
+
+        startActivity(i, transitionActivityOptions.toBundle());
+    }public void Phy(View view) {
+
+        Intent i  = new Intent (TransitionFirstActivity.this,
+                TransitionSecActivity.class);
+
+        ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(
+                TransitionFirstActivity.this,Pair.create(mFabButton, "fab"), Pair.create(mHeader, "holder1"));
+
+        startActivity(i, transitionActivityOptions.toBundle());
+    }public void Chem(View view) {
+
+        Intent i  = new Intent (TransitionFirstActivity.this,
+                TransitionSecActivity.class);
+
+        ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(
+                TransitionFirstActivity.this,Pair.create(mFabButton, "fab"), Pair.create(mHeader, "holder1"));
+
+        startActivity(i, transitionActivityOptions.toBundle());
+    }public void Mech(View view) {
+
+        Intent i  = new Intent (TransitionFirstActivity.this,
+                TransitionSecActivity.class);
+
+        ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(
+                TransitionFirstActivity.this,Pair.create(mFabButton, "fab"), Pair.create(mHeader, "holder1"));
+
+        startActivity(i, transitionActivityOptions.toBundle());
+    }public void Gra(View view) {
+
+        Intent i  = new Intent (TransitionFirstActivity.this,
+                TransitionSecActivity.class);
+
+        ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(
+                TransitionFirstActivity.this,Pair.create(mFabButton, "fab"), Pair.create(mHeader, "holder1"));
+
+        startActivity(i, transitionActivityOptions.toBundle());
+    }public void PhyL(View view) {
+
+        Intent i  = new Intent (TransitionFirstActivity.this,
+                TransitionSecActivity.class);
+
+        ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(
+                TransitionFirstActivity.this,Pair.create(mFabButton, "fab"), Pair.create(mHeader, "holder1"));
+
+        startActivity(i, transitionActivityOptions.toBundle());
+    }public void CheL(View view) {
+
+        Intent i  = new Intent (TransitionFirstActivity.this,
+                TransitionSecActivity.class);
+
+        ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(
+                TransitionFirstActivity.this,Pair.create(mFabButton, "fab"), Pair.create(mHeader, "holder1"));
+
+        startActivity(i, transitionActivityOptions.toBundle());
+    }public void CivW(View view) {
+
+        Intent i  = new Intent (TransitionFirstActivity.this,
+                TransitionSecActivity.class);
+
+        ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(
+                TransitionFirstActivity.this,Pair.create(mFabButton, "fab"), Pair.create(mHeader, "holder1"));
+
+        startActivity(i, transitionActivityOptions.toBundle());
+    }public void MechW(View view) {
+
+        Intent i  = new Intent (TransitionFirstActivity.this,
+                TransitionSecActivity.class);
+
+        ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(
+                TransitionFirstActivity.this,Pair.create(mFabButton, "fab"), Pair.create(mHeader, "holder1"));
+
+        startActivity(i, transitionActivityOptions.toBundle());
+    }public void EEW(View view) {
+
+        Intent i  = new Intent (TransitionFirstActivity.this,
+                TransitionSecActivity.class);
+
+        ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(
+                TransitionFirstActivity.this,Pair.create(mFabButton, "fab"), Pair.create(mHeader, "holder1"));
+
+        startActivity(i, transitionActivityOptions.toBundle());
+    }public void LCW(View view) {
+
+        Intent i  = new Intent (TransitionFirstActivity.this,
+                TransitionSecActivity.class);
+
+        ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(
+                TransitionFirstActivity.this,Pair.create(mFabButton, "fab"), Pair.create(mHeader, "holder1"));
+
+        startActivity(i, transitionActivityOptions.toBundle());
+    }public void CSW(View view) {
+
+        Intent i  = new Intent (TransitionFirstActivity.this,
+                TransitionSecActivity.class);
+
+        ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(
+                TransitionFirstActivity.this,Pair.create(mFabButton, "fab"), Pair.create(mHeader, "holder1"));
+
+        startActivity(i, transitionActivityOptions.toBundle());
+    }public void CheW(View view) {
+
+        Intent i  = new Intent (TransitionFirstActivity.this,
+                TransitionSecActivity.class);
+
+        ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(
+                TransitionFirstActivity.this,Pair.create(mFabButton, "fab"), Pair.create(mHeader, "holder1"));
+
+        startActivity(i, transitionActivityOptions.toBundle());
+    }public void DE(View view) {
+
+        Intent i  = new Intent (TransitionFirstActivity.this,
+                TransitionSecActivity.class);
+
+        ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(
+                TransitionFirstActivity.this,Pair.create(mFabButton, "fab"), Pair.create(mHeader, "holder1"));
+
+        startActivity(i, transitionActivityOptions.toBundle());
+    }
+}

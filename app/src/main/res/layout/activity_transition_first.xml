@@ -1,0 +1,362 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MyActivity"
+    >
+
+    <View
+        android:id="@+id/activity_transition_header"
+        android:layout_width="match_parent"
+        android:layout_height="144dp"
+        android:transitionName="holder1"
+
+        android:background="?android:colorPrimary"
+
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KTU Syllabus"
+        android:id="@+id/welcomenote"
+        android:textSize="25dp"
+        android:layout_above="@+id/scrollView"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffffff" />
+
+    <Button
+        android:id="@+id/fab_button"
+        android:layout_width="@dimen/fab_size"
+        android:layout_height="@dimen/fab_size"
+        android:transitionName="fab"
+        android:text="More"
+        android:layout_marginTop="-26dp"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/activity_transition_header"
+        android:layout_alignParentEnd="true"
+        android:elevation="5dp"
+        android:background="@drawable/ripple_round"
+        android:stateListAnimator="@anim/fab_anim"
+        android:onClick="onFabPressed"
+
+
+        android:textColor="#ffffffff" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_transition_header"
+        android:layout_alignParentStart="true"
+        android:id="@+id/scrollView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_horizontal_margin"
+            android:layout_below="@id/activity_transition_header">
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:text="Civil Engineering"
+                android:id="@+id/button"
+                android:layout_below="@+id/button4"
+                android:layout_alignParentStart="true"
+                android:onClick="IntCivil" />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:text="Mechanical Engineering"
+                android:id="@+id/button2"
+                android:layout_below="@+id/button"
+                android:layout_alignParentStart="true"
+                android:onClick="IntMech"/>
+
+
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:id="@+id/button4"
+                android:text="Electronics Engineering"
+                android:layout_below="@+id/textView"
+                android:layout_alignParentStart="true"
+                android:onClick="IntLc"/>
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:text="ICPS"
+                android:id="@+id/button5"
+                android:layout_alignTop="@+id/button2"
+                android:layout_toEndOf="@+id/button2"
+                android:onClick="ICPS"/>
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:text="Chemical Engineering"
+                android:id="@+id/button6"
+                android:layout_alignTop="@+id/button"
+                android:layout_toEndOf="@+id/button"
+                android:onClick="IntChem"/>
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:text="Sustainable Engineering"
+                android:id="@+id/button7"
+                android:layout_alignTop="@+id/button4"
+                android:layout_toEndOf="@+id/button4"
+                android:onClick="IntSus"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inroduction to"
+                android:id="@+id/textView"
+                android:phoneNumber="false"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:id="@+id/button3"
+                android:text="Electrical Engineering"
+                android:layout_below="@+id/button5"
+                android:layout_alignParentStart="true"
+                android:onClick="IntEle"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Basics of"
+                android:id="@+id/textView2"
+                android:layout_below="@+id/button3"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:id="@+id/button8"
+                android:text="Civil Engineering"
+                android:layout_below="@+id/textView2"
+                android:layout_alignParentStart="true"
+                android:onClick="BCE"/>
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:id="@+id/button9"
+                android:text="Mechanical Engineering"
+                android:layout_alignBottom="@+id/button8"
+                android:layout_toEndOf="@+id/button8"
+                android:onClick="BME"/>
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:id="@+id/button10"
+                android:text="Electrical Engineering"
+                android:layout_below="@+id/button8"
+                android:layout_alignParentStart="true"
+                android:onClick="BEE"/>
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:id="@+id/button11"
+                android:text="Electronics Engineering"
+                android:layout_below="@+id/button8"
+                android:layout_toEndOf="@+id/button8"
+                android:onClick="BLC"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mathematics"
+                android:id="@+id/textView3"
+                android:layout_below="@+id/button11"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:id="@+id/button12"
+                android:text="Calculus"
+                android:layout_below="@+id/textView3"
+                android:onClick="Cal"
+                />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:id="@+id/button13"
+                android:text="Differential Equation"
+                android:layout_below="@+id/textView3"
+                android:layout_toEndOf="@+id/button12"
+                android:onClick="Diff"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Engineering"
+                android:id="@+id/textView4"
+                android:layout_below="@+id/button12"
+                android:layout_alignParentStart="true" />
+
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:id="@+id/button14"
+                android:text="Physics"
+                android:layout_below="@+id/textView4"
+                android:onClick="Phy"/>
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:id="@+id/button15"
+                android:text="Chemistry"
+                android:layout_below="@+id/textView4"
+                android:layout_toEndOf="@+id/button14"
+                android:onClick="Chem"/>
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:id="@+id/button16"
+                android:text="Mechanics"
+                android:layout_below="@+id/button14"
+                android:onClick="Mech"
+                />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:id="@+id/button17"
+                android:text="Graphics"
+                android:layout_below="@+id/button14"
+                android:layout_toEndOf="@+id/button16"
+                android:onClick="Gra"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Workshops and Labs"
+                android:id="@+id/textView5"
+                android:layout_below="@+id/button16"
+                android:layout_alignParentStart="true"
+                />
+
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:id="@+id/button18"
+                android:text="Physics Lab"
+                android:layout_below="@+id/textView5"
+                android:onClick="PhyL"
+                 />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:id="@+id/button19"
+                android:text="Chemistry Lab"
+                android:layout_below="@+id/textView5"
+                android:layout_toEndOf="@+id/button18"
+                android:onClick="CheL"/>
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:id="@+id/button20"
+                android:text="Civil Workshop"
+                android:layout_below="@+id/button18"
+                android:onClick="CivW"
+                />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:id="@+id/button21"
+                android:text="Mechanical Workshop"
+                android:layout_below="@+id/button18"
+                android:layout_toEndOf="@+id/button20"
+                android:onClick="MechW"/>
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:id="@+id/button22"
+                android:text="Electrical Workshop"
+                android:layout_below="@+id/button20"
+                android:onClick="EEW"
+                 />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:id="@+id/button23"
+                android:text="Electronics Workshop"
+                android:layout_below="@+id/button20"
+                android:layout_toEndOf="@+id/button22"
+                android:onClick="LCW"/>
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:id="@+id/button24"
+                android:text="Computer Workshop"
+                android:layout_below="@+id/button22"
+                android:onClick="CSW"
+                 />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:id="@+id/button25"
+                android:text="Chemical Workshop"
+                android:layout_below="@+id/button22"
+                android:layout_toEndOf="@+id/button24"
+                android:onClick="CheW"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other"
+                android:id="@+id/textView6"
+                android:layout_below="@+id/button24"
+                android:layout_alignParentStart="true"
+                />
+
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:id="@+id/button26"
+                android:text="Design Engineering"
+                android:layout_below="@+id/textView6"
+                android:onClick="DE"
+                />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+</RelativeLayout>
