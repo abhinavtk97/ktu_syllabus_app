@@ -66,7 +66,8 @@
                 android:id="@+id/button"
                 android:layout_below="@+id/button4"
                 android:layout_alignParentStart="true"
-                android:onClick="IntCivil" />
+                android:onClick="IntCivil"
+                android:textColor="#3F51B5" />
 
             <Button
                 android:layout_width="150dp"
@@ -75,7 +76,8 @@
                 android:id="@+id/button2"
                 android:layout_below="@+id/button"
                 android:layout_alignParentStart="true"
-                android:onClick="IntMech"/>
+                android:onClick="IntMech"
+                android:textColor="#3F51B5" />
 
 
 
@@ -86,7 +88,8 @@
                 android:text="Electronics Engineering"
                 android:layout_below="@+id/textView"
                 android:layout_alignParentStart="true"
-                android:onClick="IntLc"/>
+                android:onClick="IntLc"
+                android:textColor="#3F51B5" />
 
             <Button
                 android:layout_width="150dp"
@@ -95,7 +98,8 @@
                 android:id="@+id/button5"
                 android:layout_alignTop="@+id/button2"
                 android:layout_toEndOf="@+id/button2"
-                android:onClick="ICPS"/>
+                android:onClick="ICPS"
+                android:textColor="#3F51B5" />
 
             <Button
                 android:layout_width="150dp"
@@ -104,7 +108,8 @@
                 android:id="@+id/button6"
                 android:layout_alignTop="@+id/button"
                 android:layout_toEndOf="@+id/button"
-                android:onClick="IntChem"/>
+                android:onClick="IntChem"
+                android:textColor="#3F51B5" />
 
             <Button
                 android:layout_width="150dp"
@@ -113,7 +118,8 @@
                 android:id="@+id/button7"
                 android:layout_alignTop="@+id/button4"
                 android:layout_toEndOf="@+id/button4"
-                android:onClick="IntSus"/>
+                android:onClick="IntSus"
+                android:textColor="#3F51B5" />
 
 
             <TextView
@@ -123,7 +129,8 @@
                 android:id="@+id/textView"
                 android:phoneNumber="false"
                 android:layout_alignParentTop="true"
-                android:layout_alignParentStart="true" />
+                android:layout_alignParentStart="true"
+                android:textColor="#3F51B5" />
 
 
             <Button
@@ -133,7 +140,8 @@
                 android:text="Electrical Engineering"
                 android:layout_below="@+id/button5"
                 android:layout_alignParentStart="true"
-                android:onClick="IntEle"/>
+                android:onClick="IntEle"
+                android:textColor="#3F51B5" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -141,7 +149,8 @@
                 android:text="Basics of"
                 android:id="@+id/textView2"
                 android:layout_below="@+id/button3"
-                android:layout_alignParentStart="true" />
+                android:layout_alignParentStart="true"
+                android:textColor="#3F51B5" />
 
             <Button
                 android:layout_width="150dp"
@@ -150,7 +159,8 @@
                 android:text="Civil Engineering"
                 android:layout_below="@+id/textView2"
                 android:layout_alignParentStart="true"
-                android:onClick="BCE"/>
+                android:onClick="BCE"
+                android:textColor="#3F51B5" />
 
             <Button
                 android:layout_width="150dp"
@@ -159,7 +169,8 @@
                 android:text="Mechanical Engineering"
                 android:layout_alignBottom="@+id/button8"
                 android:layout_toEndOf="@+id/button8"
-                android:onClick="BME"/>
+                android:onClick="BME"
+                android:textColor="#3F51B5" />
 
             <Button
                 android:layout_width="150dp"
@@ -168,7 +179,8 @@
                 android:text="Electrical Engineering"
                 android:layout_below="@+id/button8"
                 android:layout_alignParentStart="true"
-                android:onClick="BEE"/>
+                android:onClick="BEE"
+                android:textColor="#3F51B5" />
 
             <Button
                 android:layout_width="150dp"
@@ -177,7 +189,8 @@
                 android:text="Electronics Engineering"
                 android:layout_below="@+id/button8"
                 android:layout_toEndOf="@+id/button8"
-                android:onClick="BLC"/>
+                android:onClick="BLC"
+                android:textColor="#3F51B5" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -185,7 +198,8 @@
                 android:text="Mathematics"
                 android:id="@+id/textView3"
                 android:layout_below="@+id/button11"
-                android:layout_alignParentStart="true" />
+                android:layout_alignParentStart="true"
+                android:textColor="#3F51B5"/>
 
             <Button
                 android:layout_width="150dp"
@@ -194,6 +208,7 @@
                 android:text="Calculus"
                 android:layout_below="@+id/textView3"
                 android:onClick="Cal"
+                android:textColor="#3F51B5"
                 />
 
             <Button
@@ -203,7 +218,8 @@
                 android:text="Differential Equation"
                 android:layout_below="@+id/textView3"
                 android:layout_toEndOf="@+id/button12"
-                android:onClick="Diff"/>
+                android:onClick="Diff"
+                android:textColor="#3F51B5"/>
 
 
             <TextView
@@ -212,7 +228,8 @@
                 android:text="Engineering"
                 android:id="@+id/textView4"
                 android:layout_below="@+id/button12"
-                android:layout_alignParentStart="true" />
+                android:layout_alignParentStart="true"
+                android:textColor="#3F51B5"/>
 
 
             <Button
@@ -221,7 +238,8 @@
                 android:id="@+id/button14"
                 android:text="Physics"
                 android:layout_below="@+id/textView4"
-                android:onClick="Phy"/>
+                android:onClick="Phy"
+                android:textColor="#3F51B5"/>
 
             <Button
                 android:layout_width="150dp"
@@ -230,7 +248,8 @@
                 android:text="Chemistry"
                 android:layout_below="@+id/textView4"
                 android:layout_toEndOf="@+id/button14"
-                android:onClick="Chem"/>
+                android:onClick="Chem"
+                android:textColor="#3F51B5"/>
 
             <Button
                 android:layout_width="150dp"
@@ -239,6 +258,7 @@
                 android:text="Mechanics"
                 android:layout_below="@+id/button14"
                 android:onClick="Mech"
+                android:textColor="#3F51B5"
                 />
 
             <Button
@@ -248,7 +268,8 @@
                 android:text="Graphics"
                 android:layout_below="@+id/button14"
                 android:layout_toEndOf="@+id/button16"
-                android:onClick="Gra"/>
+                android:onClick="Gra"
+                android:textColor="#3F51B5"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -257,6 +278,7 @@
                 android:id="@+id/textView5"
                 android:layout_below="@+id/button16"
                 android:layout_alignParentStart="true"
+                android:textColor="#3F51B5"
                 />
 
 
@@ -267,6 +289,7 @@
                 android:text="Physics Lab"
                 android:layout_below="@+id/textView5"
                 android:onClick="PhyL"
+                android:textColor="#3F51B5"
                  />
 
             <Button
@@ -276,7 +299,8 @@
                 android:text="Chemistry Lab"
                 android:layout_below="@+id/textView5"
                 android:layout_toEndOf="@+id/button18"
-                android:onClick="CheL"/>
+                android:onClick="CheL"
+                android:textColor="#3F51B5"/>
 
             <Button
                 android:layout_width="150dp"
@@ -285,6 +309,7 @@
                 android:text="Civil Workshop"
                 android:layout_below="@+id/button18"
                 android:onClick="CivW"
+                android:textColor="#3F51B5"
                 />
 
             <Button
@@ -294,7 +319,8 @@
                 android:text="Mechanical Workshop"
                 android:layout_below="@+id/button18"
                 android:layout_toEndOf="@+id/button20"
-                android:onClick="MechW"/>
+                android:onClick="MechW"
+                android:textColor="#3F51B5"/>
 
             <Button
                 android:layout_width="150dp"
@@ -303,6 +329,7 @@
                 android:text="Electrical Workshop"
                 android:layout_below="@+id/button20"
                 android:onClick="EEW"
+                android:textColor="#3F51B5"
                  />
 
             <Button
@@ -312,7 +339,8 @@
                 android:text="Electronics Workshop"
                 android:layout_below="@+id/button20"
                 android:layout_toEndOf="@+id/button22"
-                android:onClick="LCW"/>
+                android:onClick="LCW"
+                android:textColor="#3F51B5"/>
 
             <Button
                 android:layout_width="150dp"
@@ -321,6 +349,7 @@
                 android:text="Computer Workshop"
                 android:layout_below="@+id/button22"
                 android:onClick="CSW"
+                android:textColor="#3F51B5"
                  />
 
             <Button
@@ -330,7 +359,8 @@
                 android:text="Chemical Workshop"
                 android:layout_below="@+id/button22"
                 android:layout_toEndOf="@+id/button24"
-                android:onClick="CheW"/>
+                android:onClick="CheW"
+                android:textColor="#3F51B5"/>
 
 
             <TextView
@@ -340,6 +370,7 @@
                 android:id="@+id/textView6"
                 android:layout_below="@+id/button24"
                 android:layout_alignParentStart="true"
+                android:textColor="#3F51B5"
                 />
 
 
@@ -350,6 +381,7 @@
                 android:text="Design Engineering"
                 android:layout_below="@+id/textView6"
                 android:onClick="DE"
+                android:textColor="#3F51B5"
                 />
 
 
