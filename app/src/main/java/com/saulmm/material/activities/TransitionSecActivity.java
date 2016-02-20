@@ -84,7 +84,7 @@ public class TransitionSecActivity extends Activity {
                         "6.    W. F. Chen and J. Y. Richard Liew (Eds.), The Civil Engineering Handbook, Second Edition, CRC Press (Taylor and Francis)");
                 break;
             case "2":
-                t1.setText("asd");
+
                 break;
             case "3":
                 break;
