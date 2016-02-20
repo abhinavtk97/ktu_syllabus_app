@@ -16,6 +16,7 @@
 
 
         />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -51,14 +52,29 @@
         android:layout_alignParentStart="true"
         android:id="@+id/scrollView">
 
+
         <RelativeLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/R1"
+                android:padding="8dp"
+                android:layout_margin="8dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:padding="8dp"
             android:paddingRight="@dimen/activity_horizontal_margin"
             android:paddingLeft="@dimen/activity_horizontal_margin"
             android:paddingTop="@dimen/activity_horizontal_margin"
-            android:layout_below="@id/activity_transition_header">
-
+            android:layout_below="@id/activity_transition_header"
+            android:layout_gravity="center"
+            >
             <Button
                 android:layout_width="150dp"
                 android:layout_height="60dp"
@@ -66,9 +82,7 @@
                 android:id="@+id/button"
                 android:layout_below="@+id/button4"
                 android:layout_alignParentStart="true"
-                android:onClick="IntCivil"
-                android:textColor="#3F51B5" />
-
+                android:onClick="IntCivil" />
             <Button
                 android:layout_width="150dp"
                 android:layout_height="60dp"
@@ -76,11 +90,7 @@
                 android:id="@+id/button2"
                 android:layout_below="@+id/button"
                 android:layout_alignParentStart="true"
-                android:onClick="IntMech"
-                android:textColor="#3F51B5" />
-
-
-
+                android:onClick="IntMech" />
             <Button
                 android:layout_width="150dp"
                 android:layout_height="60dp"
@@ -88,9 +98,7 @@
                 android:text="Electronics Engineering"
                 android:layout_below="@+id/textView"
                 android:layout_alignParentStart="true"
-                android:onClick="IntLc"
-                android:textColor="#3F51B5" />
-
+                android:onClick="IntLc" />
             <Button
                 android:layout_width="150dp"
                 android:layout_height="60dp"
@@ -98,9 +106,7 @@
                 android:id="@+id/button5"
                 android:layout_alignTop="@+id/button2"
                 android:layout_toEndOf="@+id/button2"
-                android:onClick="ICPS"
-                android:textColor="#3F51B5" />
-
+                android:onClick="ICPS" />
             <Button
                 android:layout_width="150dp"
                 android:layout_height="60dp"
@@ -108,9 +114,7 @@
                 android:id="@+id/button6"
                 android:layout_alignTop="@+id/button"
                 android:layout_toEndOf="@+id/button"
-                android:onClick="IntChem"
-                android:textColor="#3F51B5" />
-
+                android:onClick="IntChem" />
             <Button
                 android:layout_width="150dp"
                 android:layout_height="60dp"
@@ -118,19 +122,17 @@
                 android:id="@+id/button7"
                 android:layout_alignTop="@+id/button4"
                 android:layout_toEndOf="@+id/button4"
-                android:onClick="IntSus"
-                android:textColor="#3F51B5" />
-
-
+                android:onClick="IntSus" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Inroduction to"
+                android:text="Introduction to"
                 android:id="@+id/textView"
                 android:phoneNumber="false"
+                android:textAlignment="center"
+                android:textColor="#3F51B5"
                 android:layout_alignParentTop="true"
-                android:layout_alignParentStart="true"
-                android:textColor="#3F51B5" />
+                android:layout_alignParentStart="true" />
 
 
             <Button
@@ -140,17 +142,36 @@
                 android:text="Electrical Engineering"
                 android:layout_below="@+id/button5"
                 android:layout_alignParentStart="true"
-                android:onClick="IntEle"
-                android:textColor="#3F51B5" />
+                android:onClick="IntEle" />
+
+            </RelativeLayout>
+    </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/R2"
+        android:padding="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_below="@+id/R1">
+
+            <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+                android:layout_gravity="center">
+
+
+
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Basics of"
                 android:id="@+id/textView2"
-                android:layout_below="@+id/button3"
-                android:layout_alignParentStart="true"
-                android:textColor="#3F51B5" />
+                android:textColor="#3F51B5"
+
+                android:layout_alignParentStart="true" />
 
             <Button
                 android:layout_width="150dp"
@@ -159,8 +180,7 @@
                 android:text="Civil Engineering"
                 android:layout_below="@+id/textView2"
                 android:layout_alignParentStart="true"
-                android:onClick="BCE"
-                android:textColor="#3F51B5" />
+                android:onClick="BCE" />
 
             <Button
                 android:layout_width="150dp"
@@ -169,8 +189,7 @@
                 android:text="Mechanical Engineering"
                 android:layout_alignBottom="@+id/button8"
                 android:layout_toEndOf="@+id/button8"
-                android:onClick="BME"
-                android:textColor="#3F51B5" />
+                android:onClick="BME" />
 
             <Button
                 android:layout_width="150dp"
@@ -179,8 +198,7 @@
                 android:text="Electrical Engineering"
                 android:layout_below="@+id/button8"
                 android:layout_alignParentStart="true"
-                android:onClick="BEE"
-                android:textColor="#3F51B5" />
+                android:onClick="BEE" />
 
             <Button
                 android:layout_width="150dp"
@@ -189,15 +207,32 @@
                 android:text="Electronics Engineering"
                 android:layout_below="@+id/button8"
                 android:layout_toEndOf="@+id/button8"
-                android:onClick="BLC"
-                android:textColor="#3F51B5" />
+                android:onClick="BLC" />
+
+    </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/R2"
+                android:id="@+id/R3"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:padding="8dp">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_gravity="center"
+                >
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Mathematics"
                 android:id="@+id/textView3"
-                android:layout_below="@+id/button11"
+
                 android:layout_alignParentStart="true"
                 android:textColor="#3F51B5"/>
 
@@ -208,7 +243,7 @@
                 android:text="Calculus"
                 android:layout_below="@+id/textView3"
                 android:onClick="Cal"
-                android:textColor="#3F51B5"
+
                 />
 
             <Button
@@ -219,15 +254,33 @@
                 android:layout_below="@+id/textView3"
                 android:layout_toEndOf="@+id/button12"
                 android:onClick="Diff"
-                android:textColor="#3F51B5"/>
+                />
 
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/R3"
+                    android:id="@+id/R4"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:padding="8dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Engineering"
                 android:id="@+id/textView4"
-                android:layout_below="@+id/button12"
+
                 android:layout_alignParentStart="true"
                 android:textColor="#3F51B5"/>
 
@@ -239,7 +292,7 @@
                 android:text="Physics"
                 android:layout_below="@+id/textView4"
                 android:onClick="Phy"
-                android:textColor="#3F51B5"/>
+                />
 
             <Button
                 android:layout_width="150dp"
@@ -249,7 +302,7 @@
                 android:layout_below="@+id/textView4"
                 android:layout_toEndOf="@+id/button14"
                 android:onClick="Chem"
-                android:textColor="#3F51B5"/>
+                />
 
             <Button
                 android:layout_width="150dp"
@@ -258,7 +311,7 @@
                 android:text="Mechanics"
                 android:layout_below="@+id/button14"
                 android:onClick="Mech"
-                android:textColor="#3F51B5"
+
                 />
 
             <Button
@@ -269,14 +322,33 @@
                 android:layout_below="@+id/button14"
                 android:layout_toEndOf="@+id/button16"
                 android:onClick="Gra"
-                android:textColor="#3F51B5"/>
+                />
+
+            </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/R4"
+                            android:id="@+id/R5"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="8dp"
+                            android:padding="8dp">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="8dp"
+                                android:layout_gravity="center"
+                                >
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Workshops and Labs"
                 android:id="@+id/textView5"
-                android:layout_below="@+id/button16"
+
                 android:layout_alignParentStart="true"
                 android:textColor="#3F51B5"
                 />
@@ -289,7 +361,7 @@
                 android:text="Physics Lab"
                 android:layout_below="@+id/textView5"
                 android:onClick="PhyL"
-                android:textColor="#3F51B5"
+
                  />
 
             <Button
@@ -300,7 +372,7 @@
                 android:layout_below="@+id/textView5"
                 android:layout_toEndOf="@+id/button18"
                 android:onClick="CheL"
-                android:textColor="#3F51B5"/>
+                />
 
             <Button
                 android:layout_width="150dp"
@@ -309,7 +381,7 @@
                 android:text="Civil Workshop"
                 android:layout_below="@+id/button18"
                 android:onClick="CivW"
-                android:textColor="#3F51B5"
+
                 />
 
             <Button
@@ -320,7 +392,7 @@
                 android:layout_below="@+id/button18"
                 android:layout_toEndOf="@+id/button20"
                 android:onClick="MechW"
-                android:textColor="#3F51B5"/>
+                />
 
             <Button
                 android:layout_width="150dp"
@@ -329,7 +401,7 @@
                 android:text="Electrical Workshop"
                 android:layout_below="@+id/button20"
                 android:onClick="EEW"
-                android:textColor="#3F51B5"
+
                  />
 
             <Button
@@ -340,7 +412,7 @@
                 android:layout_below="@+id/button20"
                 android:layout_toEndOf="@+id/button22"
                 android:onClick="LCW"
-                android:textColor="#3F51B5"/>
+                />
 
             <Button
                 android:layout_width="150dp"
@@ -349,7 +421,7 @@
                 android:text="Computer Workshop"
                 android:layout_below="@+id/button22"
                 android:onClick="CSW"
-                android:textColor="#3F51B5"
+
                  />
 
             <Button
@@ -360,15 +432,32 @@
                 android:layout_below="@+id/button22"
                 android:layout_toEndOf="@+id/button24"
                 android:onClick="CheW"
-                android:textColor="#3F51B5"/>
+                />
+                </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/R5"
+                                    android:id="@+id/R6"
+                                    android:layout_marginRight="8dp"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginTop="8dp"
+                                    android:padding="8dp">
 
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="8dp"
+                                        android:layout_gravity="center_horizontal"
+                                        android:gravity="center">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Other"
                 android:id="@+id/textView6"
-                android:layout_below="@+id/button24"
+
                 android:layout_alignParentStart="true"
                 android:textColor="#3F51B5"
                 />
@@ -381,14 +470,21 @@
                 android:text="Design Engineering"
                 android:layout_below="@+id/textView6"
                 android:onClick="DE"
-                android:textColor="#3F51B5"
+
                 />
 
 
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
         </RelativeLayout>
+
+
+
+
+
+
     </ScrollView>
-
-
 
 
 </RelativeLayout>

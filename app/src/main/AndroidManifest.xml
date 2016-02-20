@@ -5,7 +5,7 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
-        android:label=""
+        android:label="KTU Syllabus"
         android:theme="@style/AppTheme" >
 
         <activity android:name="com.saulmm.material.activities.TransitionFirstActivity"

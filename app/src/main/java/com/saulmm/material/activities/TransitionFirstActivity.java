@@ -18,7 +18,9 @@ public class TransitionFirstActivity extends Activity {
     private View mFabButton;
     private View mHeader;
 
-    String m11,m12,m13,m21,m22,m23,m31,m32,m33,m41,m42,m43,m51,m52,m53,m61,m62,m63;
+    String m11,m12,m13,m21,m22,m23,m31,m32,m33,m41,m42,m43,m51,m52,m53,m61,m62,m63,m64,flag;
+    String m009="i";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -78,6 +80,7 @@ public class TransitionFirstActivity extends Activity {
                 "Hence the B.tech Syllabus for KTU .\n";
         m62="";
         m63="";
+        flag="1";
         i.putExtra("m11",m11);
         i.putExtra("m12",m12);
         i.putExtra("m13",m13);
@@ -96,6 +99,7 @@ public class TransitionFirstActivity extends Activity {
         i.putExtra("m61",m61);
         i.putExtra("m62",m62);
         i.putExtra("m63",m63);
+        i.putExtra("flag",flag);
 
         ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(
                 TransitionFirstActivity.this,Pair.create(mFabButton, "fab"), Pair.create(mHeader, "holder1"));
@@ -133,6 +137,7 @@ public class TransitionFirstActivity extends Activity {
 
         m62="";
         m63="";
+        flag="2";
         i.putExtra("m11",m11);
         i.putExtra("m12",m12);
         i.putExtra("m13",m13);
@@ -151,6 +156,7 @@ public class TransitionFirstActivity extends Activity {
         i.putExtra("m61",m61);
         i.putExtra("m62",m62);
         i.putExtra("m63",m63);
+        i.putExtra("flag",flag);
 
         ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(
                 TransitionFirstActivity.this,Pair.create(mFabButton, "fab"), Pair.create(mHeader, "holder1"));
@@ -209,6 +215,7 @@ public class TransitionFirstActivity extends Activity {
 
         m62="";
         m63="";
+        flag="3";
         i.putExtra("m11",m11);
         i.putExtra("m12",m12);
         i.putExtra("m13",m13);
@@ -227,6 +234,7 @@ public class TransitionFirstActivity extends Activity {
         i.putExtra("m61",m61);
         i.putExtra("m62",m62);
         i.putExtra("m63",m63);
+        i.putExtra("flag",flag);
 
         ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(
                 TransitionFirstActivity.this,Pair.create(mFabButton, "fab"), Pair.create(mHeader, "holder1"));
@@ -260,6 +268,7 @@ public class TransitionFirstActivity extends Activity {
 
         m62="";
         m63="";
+        flag="4";
         i.putExtra("m11",m11);
         i.putExtra("m12",m12);
         i.putExtra("m13",m13);
@@ -278,6 +287,7 @@ public class TransitionFirstActivity extends Activity {
         i.putExtra("m61",m61);
         i.putExtra("m62",m62);
         i.putExtra("m63",m63);
+        i.putExtra("flag",flag);
 
         ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(
                 TransitionFirstActivity.this,Pair.create(mFabButton, "fab"), Pair.create(mHeader, "holder1"));
@@ -306,6 +316,7 @@ public class TransitionFirstActivity extends Activity {
         m61="Manufacturing Engineering & Materials: Introduction and history of materials and manufacturing; engineering materials; metals, alloys, composites, microstructures, heat treatment, physical properties of materials and material testing; methods of manufacturing;   examples of manufactured products; Computer Integrated manufacturing; lean production & agile manufacturing; environmentally conscious design & manufacturing; organization for manufacture.";
         m62="";
         m63="";
+        flag="5";
         i.putExtra("m11",m11);
         i.putExtra("m12",m12);
         i.putExtra("m13",m13);
@@ -324,6 +335,7 @@ public class TransitionFirstActivity extends Activity {
         i.putExtra("m61",m61);
         i.putExtra("m62",m62);
         i.putExtra("m63",m63);
+        i.putExtra("flag",flag);
 
         ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(
                 TransitionFirstActivity.this,Pair.create(mFabButton, "fab"), Pair.create(mHeader, "holder1"));
@@ -353,6 +365,7 @@ public class TransitionFirstActivity extends Activity {
         m61="Files and exceptions – text files, directories (Note: - Chapter 11 of the thirdtext  book  has  to  be  covered.).  Introduction  to  classes  and  objects  – attributes, instances (Note: - Chapter 12 of the third text book up to Section 12.6 has to be covered.).";
         m62="";
         m63="";
+        flag="6";
         i.putExtra("m11",m11);
         i.putExtra("m12",m12);
         i.putExtra("m13",m13);
@@ -371,6 +384,7 @@ public class TransitionFirstActivity extends Activity {
         i.putExtra("m61",m61);
         i.putExtra("m62",m62);
         i.putExtra("m63",m63);
+        i.putExtra("flag",flag);
 
         ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(
                 TransitionFirstActivity.this,Pair.create(mFabButton, "fab"), Pair.create(mHeader, "holder1"));
@@ -400,6 +414,7 @@ public class TransitionFirstActivity extends Activity {
                 "Earthing: Earthing of installations - necessity of earthing, plate & pipe earthing. Protective devices: protective fuses, MCB, ELCB.";
         m62="";
         m63="";
+        flag="7";
         i.putExtra("m11",m11);
         i.putExtra("m12",m12);
         i.putExtra("m13",m13);
@@ -418,6 +433,7 @@ public class TransitionFirstActivity extends Activity {
         i.putExtra("m61",m61);
         i.putExtra("m62",m62);
         i.putExtra("m63",m63);
+        i.putExtra("flag",flag);
 
         ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(
                 TransitionFirstActivity.this,Pair.create(mFabButton, "fab"), Pair.create(mHeader, "holder1"));
@@ -445,6 +461,7 @@ public class TransitionFirstActivity extends Activity {
         m61="Basic infrastructure and services - elevators, escalators, ramps, air conditioning, sound proofing (civil engineering aspects only) towers, chimneys, water tanks (brief discussion only). Concept of intelligent buildings.";
         m62="";
         m63="";
+        flag="8";
         i.putExtra("m11",m11);
         i.putExtra("m12",m12);
         i.putExtra("m13",m13);
@@ -463,6 +480,7 @@ public class TransitionFirstActivity extends Activity {
         i.putExtra("m61",m61);
         i.putExtra("m62",m62);
         i.putExtra("m63",m63);
+        i.putExtra("flag",flag);
 
         ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(
                 TransitionFirstActivity.this,Pair.create(mFabButton, "fab"), Pair.create(mHeader, "holder1"));
@@ -493,6 +511,7 @@ public class TransitionFirstActivity extends Activity {
 
         m62="";
         m63="";
+        flag="9";
         i.putExtra("m11",m11);
         i.putExtra("m12",m12);
         i.putExtra("m13",m13);
@@ -511,6 +530,7 @@ public class TransitionFirstActivity extends Activity {
         i.putExtra("m61",m61);
         i.putExtra("m62",m62);
         i.putExtra("m63",m63);
+        i.putExtra("flag",flag);
 
         ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(
                 TransitionFirstActivity.this,Pair.create(mFabButton, "fab"), Pair.create(mHeader, "holder1"));
@@ -538,6 +558,7 @@ public class TransitionFirstActivity extends Activity {
         m61="Tariff: Different types of LT and HT consumers, tariff schemes - uniform tariff and differential tariff. Wiring systems: Basic concepts of wiring (conduit wiring only), service mains, meter board and distribution board. Earthing of installations - necessity of earthing, plate & pipe earthing, protective fuses, MCB, ELCB. Lamps: Different types of lamps - Incandescent lamps, fluorescent, mercury vapour, sodium vapour, metal halide and LED lamps.";
         m62="";
         m63="";
+        flag="10";
         i.putExtra("m11",m11);
         i.putExtra("m12",m12);
         i.putExtra("m13",m13);
@@ -556,6 +577,7 @@ public class TransitionFirstActivity extends Activity {
         i.putExtra("m61",m61);
         i.putExtra("m62",m62);
         i.putExtra("m63",m63);
+        i.putExtra("flag",flag);
 
         ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(
                 TransitionFirstActivity.this,Pair.create(mFabButton, "fab"), Pair.create(mHeader, "holder1"));
@@ -583,6 +605,7 @@ public class TransitionFirstActivity extends Activity {
         m61="Mobile communication: basic principles of cellular communications, concepts of cells, frequency reuse, principle and block diagram of GSM. Optical communication: block diagram of the optical communication system, principle of light transmission through fiber, advantages of optical communication systems. Entertainment and Security Electronics Technology: Basic principles of cable TV, CCTV, DTH system, HDTV, Plasma, LCD, LED TV.";
         m62="";
         m63="";
+        flag="11";
         i.putExtra("m11",m11);
         i.putExtra("m12",m12);
         i.putExtra("m13",m13);
@@ -601,6 +624,7 @@ public class TransitionFirstActivity extends Activity {
         i.putExtra("m61",m61);
         i.putExtra("m62",m62);
         i.putExtra("m63",m63);
+        i.putExtra("flag",flag);
 
         ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(
                 TransitionFirstActivity.this,Pair.create(mFabButton, "fab"), Pair.create(mHeader, "holder1"));
@@ -645,6 +669,7 @@ public class TransitionFirstActivity extends Activity {
                 "(without proof) , Stokes’ Theorem (without proof)";
         m62="";
         m63="";
+        flag="12";
         i.putExtra("m11",m11);
         i.putExtra("m12",m12);
         i.putExtra("m13",m13);
@@ -663,6 +688,7 @@ public class TransitionFirstActivity extends Activity {
         i.putExtra("m61",m61);
         i.putExtra("m62",m62);
         i.putExtra("m63",m63);
+        i.putExtra("flag",flag);
 
 
 
@@ -695,6 +721,7 @@ public class TransitionFirstActivity extends Activity {
         m61="APPLICATIONS OF PARTIAL DIFFERENTIAL EQUATIONS (Book 2. Section: 6.1, 6.2, 6.3, 6.4, 6.7, 6. 8, 6. 9, 6.9.1, 6.9.2) Method of Separation of Variables- Wave equation-Vibrations of a Stretched sting, Solution of one dimensional equation-The equation of Heat conduction – One dimensional Heat equation- Solution of one dimensional Heat equation –A long insulated rod with ends at zero temperatures- A long insulated rod with ends at non-zero temperatures.";
         m62="";
         m63="";
+        flag="13";
         i.putExtra("m11",m11);
         i.putExtra("m12",m12);
         i.putExtra("m13",m13);
@@ -713,6 +740,7 @@ public class TransitionFirstActivity extends Activity {
         i.putExtra("m61",m61);
         i.putExtra("m62",m62);
         i.putExtra("m63",m63);
+        i.putExtra("flag",flag);
 
         ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(
                 TransitionFirstActivity.this,Pair.create(mFabButton, "fab"), Pair.create(mHeader, "holder1"));
@@ -753,6 +781,7 @@ public class TransitionFirstActivity extends Activity {
         m61="Laser: Properties of Lasers, Absorption, Spontaneous and stimulated emissions, Population inversion, Einstein’s coefficients, Working principle of laser, Optical resonant   cavity.   Ruby   Laser,   Helium-Neon   Laser,   Semiconductor   Laser (qualitative). Applications of laser, holography (Recording and reconstruction) Photonics: Basics of   solid state lighting- LED -Photo detectors- photo voltaic cell, junction & avalanche photo diodes, photo transistors, Thermal detectors, Solar cells- I-V characteristics –Optic fibre-Principle of propagation-numerical aperture-optic communication system (block diagram) -Industrial, medical and technological  applications  of  optical  fibre.  Fibre  optic  sensors  -  Intensity modulated, phase modulated and polarization modulated sensors.";
         m62="";
         m63="";
+        flag="14";
         i.putExtra("m11",m11);
         i.putExtra("m12",m12);
         i.putExtra("m13",m13);
@@ -771,6 +800,7 @@ public class TransitionFirstActivity extends Activity {
         i.putExtra("m61",m61);
         i.putExtra("m62",m62);
         i.putExtra("m63",m63);
+        i.putExtra("flag",flag);
 
         ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(
                 TransitionFirstActivity.this,Pair.create(mFabButton, "fab"), Pair.create(mHeader, "holder1"));
@@ -807,6 +837,7 @@ public class TransitionFirstActivity extends Activity {
                 "Types of hardness, Estimation of Hardness - EDTA method,Water softening methods - Ion exchange process - Principle. Polymer ion exchange - Reverse Osmosis - Disinfection method by chlorination and UV Dissolved oxygen, BOD and COD.Sewage water Treatment - Trickling Filter and UASB process.";
         m62="";
         m63="";
+        flag="15";
         i.putExtra("m11",m11);
         i.putExtra("m12",m12);
         i.putExtra("m13",m13);
@@ -825,6 +856,7 @@ public class TransitionFirstActivity extends Activity {
         i.putExtra("m61",m61);
         i.putExtra("m62",m62);
         i.putExtra("m63",m63);
+        i.putExtra("flag",flag);
 
         ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(
                 TransitionFirstActivity.this,Pair.create(mFabButton, "fab"), Pair.create(mHeader, "holder1"));
@@ -854,6 +886,7 @@ public class TransitionFirstActivity extends Activity {
                 "Frequency – Simple numerical problems of single degree of freedom.";
         m62="";
         m63="";
+        flag="16";
         i.putExtra("m11",m11);
         i.putExtra("m12",m12);
         i.putExtra("m13",m13);
@@ -872,6 +905,7 @@ public class TransitionFirstActivity extends Activity {
         i.putExtra("m61",m61);
         i.putExtra("m62",m62);
         i.putExtra("m63",m63);
+        i.putExtra("flag",flag);
 
         ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(
                 TransitionFirstActivity.this,Pair.create(mFabButton, "fab"), Pair.create(mHeader, "holder1"));
@@ -900,6 +934,7 @@ public class TransitionFirstActivity extends Activity {
                 "Introduction to Computer Aided Drafting - Preparation of engineering drawings by using any software capable of drafting and modeling. (For internal work assessment only, not for University Examination)";
         m62="";
         m63="";
+        flag="17";
         i.putExtra("m11",m11);
         i.putExtra("m12",m12);
         i.putExtra("m13",m13);
@@ -918,6 +953,7 @@ public class TransitionFirstActivity extends Activity {
         i.putExtra("m61",m61);
         i.putExtra("m62",m62);
         i.putExtra("m63",m63);
+        i.putExtra("flag",flag);
 
         ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(
                 TransitionFirstActivity.this,Pair.create(mFabButton, "fab"), Pair.create(mHeader, "holder1"));
@@ -927,24 +963,50 @@ public class TransitionFirstActivity extends Activity {
 
         Intent i  = new Intent (TransitionFirstActivity.this,
                 TransitionSecActivity.class);
-        m11="";
-        m12="";
-        m13="";
+        m11="List Of Exercises / Experiments (Minimum Of 8 Mandatory)";
+        m12="Basics";
+        m13="1.    Study of application of Cathode Ray Oscilloscope (CRO) for Frequency and Amplitude measurements. Lissajeous figures (useful for different types of polarized light.)\n" +
+                "2.    Temperature measurement – Thermocouple\n" +
+                "3.    Measurement of strain using strain gauge and Wheatstones bridge.";
         m21="";
-        m22="";
-        m23="";
+        m22="Waves, Oscillations and Ultrasonics";
+        m23="4.    Wave length and velocity measurement of ultrasonic waves in a liquid using ultrasonic diffractometer.\n" +
+                "5.    The LCR Circuit – Forced and damped harmonic oscillations.\n" +
+                "6.    Meldes string apparatus. Measurement of frequency in the transverse and longitudinal mode.";
         m31="";
-        m32="";
-        m33="";
+        m32="Interference";
+        m33="7.    Wave length measurement of a monochromatic source of light using Newton’s Rings method.\n" +
+                "8.    Determination of refractive index of a liquid using Newton’s Rings apparatus.\n" +
+                "9.    Determination of diameter of a thin wire or thickness of a thin strip of paper using air wedge method.";
         m41="";
-        m42="";
-        m43="";
+        m42="Diffraction";
+        m43="10.  To determine the slit or pinhole width.\n" +
+                "11.  To measure wavelength using a millimeter scale as a grating.\n" +
+                "12.  Determination the wavelength of He-Ne laser or any standard laser using diffraction grating.\n" +
+                "13.  To determine the wavelength of monochromatic light using grating.\n" +
+                "14.  Determination of dispersive power and resolving power of a plane transmission grating.";
         m51="";
-        m52="";
-        m53="";
+        m52="Polarisation";
+        m53="15.  Laurent’s Half Shade Polarimeter -To observe the rotation of the plane of polarization of monochromatic light by sugar solution and hence to determine the concentration of solution of optically active substance.\n" +
+                "16.  Kerr Effect - To demonstrate the Kerr effect in nitrobenzene solution and to measure the light intensity as a function of voltage across the Kerr cell using photo detector.\n" +
+                "17.  To measure the light intensity of plane polarised light as a function of the analyzer position.";
         m61="";
-        m62="";
-        m63="";
+        m62="Laser & Photonics";
+        m63="15.  Laurent’s Half Shade Polarimeter -To observe the rotation of the plane of polarization of monochromatic light by sugar solution and hence to determine the concentration of solution of optically active substance.\n" +
+                "16.  Kerr Effect - To demonstrate the Kerr effect in nitrobenzene solution and to measure the light intensity as a function of voltage across the Kerr cell using photo detector.\n" +
+                "17.  To measure the light intensity of plane polarised light as a function of the analyzer position.";
+        m64="References Books:\n" +
+                "\n" +
+                "1.    Rao, B. S, Krishna, K. V., Engineering Physics Practicals, Laxmi Publications\n" +
+                "\n" +
+                "2.    Koser, A. A., Practical Engineering Physics, Nakoda Publishers and Printers India Ltd\n" +
+                "\n" +
+                "3.    Avadhanulu, M. N., Dani, A. A., Pokley, P. M., Experiments in Engineering Physics, S.Chand & Co.\n" +
+                "\n" +
+                "4.    Gupta, S. K., Engineering Physics Practicals, Krishna Prakashan Pvt. Ltd.\n" +
+                "\n" +
+                "5.    Sasikumar, P. R. Practical Physics, PHI.";
+        flag="18";
         i.putExtra("m11",m11);
         i.putExtra("m12",m12);
         i.putExtra("m13",m13);
@@ -963,6 +1025,9 @@ public class TransitionFirstActivity extends Activity {
         i.putExtra("m61",m61);
         i.putExtra("m62",m62);
         i.putExtra("m63",m63);
+        i.putExtra("m009",m009);
+        i.putExtra("m64",m64);
+        i.putExtra("flag",flag);
 
         ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(
                 TransitionFirstActivity.this,Pair.create(mFabButton, "fab"), Pair.create(mHeader, "holder1"));
@@ -972,9 +1037,24 @@ public class TransitionFirstActivity extends Activity {
 
         Intent i  = new Intent (TransitionFirstActivity.this,
                 TransitionSecActivity.class);
-        m11="";
+        m11="List Of Exercises / Experiments (Minimum Of 8 Mandatory)";
         m12="";
-        m13="";
+        m13="Estimation Of Total Hardness – Edta Method.\n" +
+                "Estimation Of Iron In Iron Ore. \n" +
+                "Estimation Of Copper In Brass. \n" +
+                "Estimation Of Dissolved Oxygen By Winklers Method. \n" +
+                "Estimation Of Chloride In Water. \n" +
+                "Preparation Of Urea Formaldehyde And Phenol-Formaldehyde Resin. \n" +
+                "Determination Of Flash Point And Fire Point Of Oil By Pensky Martin Apparatus. \n" +
+                "Determination Of Wavelength Of Absorption Maximum And Colorimetric Estimation Of Fe3+ In Solution. \n" +
+                "Determination Of Molar Absorptivity Of A Compound Other Than Fe3+. \n" +
+                "Analysis Of Ir Spectra Of Any Three Organic Compounds. \n" +
+                "Analysis Of 1H Nmr Spectra Of Any Three Organic Compounds. \n" +
+                "Calibration Of Ph Meter And Determination Of Ph Of A Solution. \n" +
+                "Verification Of Nernst Equation For Electrochemical Cell. \n" +
+                "Potentiometric Titrations: Acid – Base And Redox Titrations \n" +
+                "Conductivity Measurements Of Salt Solutions. \n" +
+                "Flame Photometric Estimation Of Na+ To Find Out The Salinity In Sand.";
         m21="";
         m22="";
         m23="";
@@ -990,6 +1070,7 @@ public class TransitionFirstActivity extends Activity {
         m61="";
         m62="";
         m63="";
+        flag="19";
         i.putExtra("m11",m11);
         i.putExtra("m12",m12);
         i.putExtra("m13",m13);
@@ -1008,6 +1089,8 @@ public class TransitionFirstActivity extends Activity {
         i.putExtra("m61",m61);
         i.putExtra("m62",m62);
         i.putExtra("m63",m63);
+        i.putExtra("m009",m009);
+        i.putExtra("flag",flag);
 
         ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(
                 TransitionFirstActivity.this,Pair.create(mFabButton, "fab"), Pair.create(mHeader, "holder1"));
@@ -1017,9 +1100,30 @@ public class TransitionFirstActivity extends Activity {
 
         Intent i  = new Intent (TransitionFirstActivity.this,
                 TransitionSecActivity.class);
-        m11="";
+        m11="List Of Exercises / Experiments (Minimum Of 8 Mandatory)";
         m12="";
-        m13="";
+        m13="Setting out of a building: The student should set out a building (single room only) as per the given building plan using tape only. \n" +
+                "Setting out of a building: The student should set out a building (single room only) as per the given building plan using tape and cross staff.\n" +
+                " Construct a wall of height 50 cm and wall thickness 1½ bricks using English bond (No mortar required) - corner portion – length of side walls 60 cm. \n" +
+                "Construct a wall of height 50 cm and wall thickness 2 bricks using English bond (No mortar required) - corner portion – length of side walls 60 cm. \n" +
+                "Compute the area and/or volume of various features of a building/structure such as door and window size, number of bricks required to construct a wall of a building, diameter of bars used in windows etc. – To create an awareness of measurements and units (use tape or other simple measuring instruments like vernier caliper, screw gauge etc.). \n" +
+                "Testing of building materials: The student should do the compression testing of any three construction materials and compare the strength (brick, hollow block, laterite block, cement concrete cube, stone block, and so on). \n" +
+                "Computation of Centre of gravity and Moment of inertia of a given rolled steel section by actual measurements. Introduction to simple plumbing and sanitary fittings. \n" +
+                "Home assignment 1: Preparation of a building model - The students in batches should prepare and submit a building model for a given plinth area in a given site plan constrained by a boundary wall. The minimum requirements of a residential building viz., drawing cum dining room, one bed room and a kitchen should be included. The concept of an energy efficient building should also be included in the model. \n" +
+                "Home assignment 2: Report preparation -The student should collect the construction details of any one unique Civil Engineering structure, prepare and submit a detailed report with neat illustrations. \n" +
+                "Home assignment 3: Report preparation - The students should collect samples of building materials, prepare and submit a detailed report including their market rates.\n" +
+                "(For braches other than Civil Engineering) \n" +
+                "Setting out of a building: The student should set out a building (single room only) as per the given building plan using tape only. \n" +
+                "Setting out of a building: The student should set out a building (single room only) as per the given building plan using tape and cross staff. \n" +
+                "Building area computation: The student should prepare a rough sketch of a given single storeyed building and by taking linear measurements compute plinth area and carpet area of the given building. \n" +
+                "Construct a wall of atleast a height of 500mm and wall thickness 1brick using English bond (No mortar required) - corner portion – length of side walls at least 600mm. \n" +
+                "Compute the area and/or volume of various features of a building/structure such as door and window size, number of bricks required to construct a wall of a building, diameter of bars used in windows etc. – To create an awareness of measurements and units (use tape or other simple measuring instruments like vernier calipers, screw gauge etc.). \n" +
+                "Horizontal measurements: Find the area of an irregular polygon set out on the field. Vertical measurements: Find the level difference between any two points. \n" +
+                "Computation of Centre of gravity and Moment of inertia of a given rolled steel section by sketching and measurements. \n" +
+                "Home assignment 1: Preparation of a building model - The students in batches should prepare and submit a building model for a given plinth area in a given site plan constrained by a boundary wall. The minimum requirements of a residential building viz., drawing cum dining room, one bed room and a kitchen should be included. The concept of an energy efficient building should also be included in the model. \n" +
+                "Home assignment 2: Report preparation - The student should collect the construction details of an industrial building related to their branch of study, prepare and submit a detailed report with neat illustrations. \n" +
+                "Home assignment 3: Report preparation - The students should collect samples of building materials, prepare and submit a detailed report about their market rates.\n" +
+                "\n";
         m21="";
         m22="";
         m23="";
@@ -1035,6 +1139,7 @@ public class TransitionFirstActivity extends Activity {
         m61="";
         m62="";
         m63="";
+        flag="20";
         i.putExtra("m11",m11);
         i.putExtra("m12",m12);
         i.putExtra("m13",m13);
@@ -1053,6 +1158,8 @@ public class TransitionFirstActivity extends Activity {
         i.putExtra("m61",m61);
         i.putExtra("m62",m62);
         i.putExtra("m63",m63);
+        i.putExtra("m009",m009);
+        i.putExtra("flag",flag);
 
         ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(
                 TransitionFirstActivity.this,Pair.create(mFabButton, "fab"), Pair.create(mHeader, "holder1"));
@@ -1062,9 +1169,16 @@ public class TransitionFirstActivity extends Activity {
 
         Intent i  = new Intent (TransitionFirstActivity.this,
                 TransitionSecActivity.class);
-        m11="";
+        m11="List Of Exercises / Experiments (Minimum Of 8 Mandatory)";
         m12="";
-        m13="";
+        m13="General : Studies of mechanical tools, components and their applications: (a) Tools: Screw drivers, spanners, allen keys, Cutting pliers etc. And accessories (b)Components: Bearings, seals, O-rings, circlips, keys etc.\n" +
+                "Carpentry : Any one model from the following: 1. T-Lap joint 2. Cross lap joint 3. Dovetail joint 4. Mortise joint\n" +
+                "Smithy: (a) Demonstrating the forgability of different materials (MS, Al, Alloy steel and Cast steel) in cold and hot states. (b) Observing the qualitative differences in the hardness of these materials (c) Determining the shape and dimensional variations of Al test specimen due to forging under different states by visual inspection and measurements\n" +
+                "Foundry : Any one exercise from the following 1.Bench moulding 2. Floor mouldiing 3. Core making\n" +
+                "Sheet metal : Any one exercise from the following Making 1. Cylindrical 2. Conical 3. Prismatic shaped jobs from sheet metal\n" +
+                "Welding : Any one exercise from the following Making joints using Electric arc welding. Bead formation in horizontal, vertical and overhead positions\n" +
+                "Fitting and Assembly  : Filing exercise and any one of the following exercises Disassembling and reassembling of 1. cylinder piston assembly 2. Tail stock assembly 3. Time piece/clock 4. Bicycle or any machine.\n" +
+                "Machines : Demonstration and applications of Drilling machine, Grinding machine, Shaping machine, Milling machine and lathe.";
         m21="";
         m22="";
         m23="";
@@ -1080,6 +1194,7 @@ public class TransitionFirstActivity extends Activity {
         m61="";
         m62="";
         m63="";
+        flag="21";
         i.putExtra("m11",m11);
         i.putExtra("m12",m12);
         i.putExtra("m13",m13);
@@ -1098,6 +1213,8 @@ public class TransitionFirstActivity extends Activity {
         i.putExtra("m61",m61);
         i.putExtra("m62",m62);
         i.putExtra("m63",m63);
+        i.putExtra("m009",m009);
+        i.putExtra("flag",flag);
 
         ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(
                 TransitionFirstActivity.this,Pair.create(mFabButton, "fab"), Pair.create(mHeader, "holder1"));
@@ -1107,12 +1224,26 @@ public class TransitionFirstActivity extends Activity {
 
         Intent i  = new Intent (TransitionFirstActivity.this,
                 TransitionSecActivity.class);
-        m11="";
+        m11="List Of Exercises / Experiments (Minimum Of 8 Mandatory)";
         m12="";
-        m13="";
+        m13="Identify different types of cables/wires and switches and their uses. \n" +
+                "Identify different types of fuses & fuse carriers, MCB and ELCB, MCCB with ratings and usage. \n" +
+                " Wiring of simple light circuit for controlling light/fan point (PVC conduit wiring). \n" +
+                "Wiring of light/fan circuit using Two way switches (Staircase wiring) \n" +
+                "Wiring of fluorescent lamps and light sockets (6 A) \n" +
+                "Wiring of Power circuit for controlling power device (16A socket) \n" +
+                "Godown wiring / Tunnel wiring \n" +
+                "Wiring of power distribution arrangement using single phase MCB distribution board with ELCB, Main switch and Energy meter. \n" +
+                "Measurement of voltage, current, resistance, inductance, and capacitance in a given RLC circuit using LCR meter and Multimeter. \n" +
+                "Measurement of voltage, current and power in single phase circuit using voltmeter, ammeter and wattmeter. Calculate the power factor of the circuit. \n" +
+                "Wiring of backup power supply including inverter, battery and load. \n" +
+                "Demonstration of electric iron, mixer grinder, single phase pump, exhaust fan.";
         m21="";
-        m22="";
-        m23="";
+        m22="Expected outcome ";
+        m23="Familiarity with supply arrangements and their limitations, knowledge of standard voltages and their tolerances, safety aspects of electrical systems and importance of protective measures in wiring systems. \n" +
+                "Knowledge about the types of wires, cables and other accessories used in wiring. Creating awareness of energy conservation in electrical systems. \n" +
+                "Students should be able to wire simple lighting circuits for domestic buildings, distinguish between light and power circuits. \n" +
+                "To measure electrical circuit parameters and current, voltage and power in a circuit. Familiarity with backup power supply in domestic installation.";
         m31="";
         m32="";
         m33="";
@@ -1125,6 +1256,7 @@ public class TransitionFirstActivity extends Activity {
         m61="";
         m62="";
         m63="";
+        flag="22";
         i.putExtra("m11",m11);
         i.putExtra("m12",m12);
         i.putExtra("m13",m13);
@@ -1143,6 +1275,8 @@ public class TransitionFirstActivity extends Activity {
         i.putExtra("m61",m61);
         i.putExtra("m62",m62);
         i.putExtra("m63",m63);
+        i.putExtra("m009",m009);
+        i.putExtra("flag",flag);
 
         ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(
                 TransitionFirstActivity.this,Pair.create(mFabButton, "fab"), Pair.create(mHeader, "holder1"));
@@ -1152,12 +1286,31 @@ public class TransitionFirstActivity extends Activity {
 
         Intent i  = new Intent (TransitionFirstActivity.this,
                 TransitionSecActivity.class);
-        m11="";
+        m11="List Of Exercises / Experiments (Minimum Of 8 Mandatory)";
         m12="";
-        m13="";
+        m13="Familiarization/Identification of electronic components with specification (Functionality, type, size, colour coding, package, symbol, cost etc. [Active, Passive, Electrical, Electronic, Electro-mechanical, Wires, Cables, Connectors, Fuses, Switches, Relays, Crystals, Displays, Fasteners, Heat sink etc.) \n" +
+                "Drawing of electronic circuit diagrams using BIS/IEEE symbols and introduction to EDA tools, Interpret data sheets of discrete components and IC’s, Estimation and costing. \n" +
+                "Familiarization/Application of testing instruments and commonly used tools. [Multimeter, Function generator, Power supply, CRO etc.] [Soldering iron, De-soldering pump, Pliers, Cutters, Wire strippers, Screw drivers, Tweezers, Crimping tool, Hot air soldering and de- soldering station etc.] \n" +
+                "Testing of electronic components [Resistor, Capacitor, Diode, Transistor, UJT and JFET using multimeter.] \n" +
+                "Inter-connection methods and soldering practice. [Bread board, Wrapping, Crimping, Soldering - types - selection of materials and safety precautions, soldering practice in connectors and general purpose PCB, Crimping.] \n" +
+                "Printed circuit boards (PCB) [Types, Single sided, Double sided, PTH, Processing methods, Design and fabrication of a single sided PCB for a simple circuit with manual etching (Ferric chloride) and drilling.] \n" +
+                "Assembling of electronic circuit/system on general purpose PCB, test and show the functioning(Any Four circuits)\n" +
+                "Fixed voltage power supply with transformer, rectifier diode, capacitor filter, zener/IC regulator. \n" +
+                "LED blinking circuit using a stable multi-vibrator with transistor BC 107.\n" +
+                " Square wave generation using IC 555 timer in IC base. \n" +
+                "Sine wave generation using IC 741 OP-AMP in IC base. \n" +
+                "RC coupled amplifier with transistor BC 107. 6. AND and NAND gates in diode transistor logic.\n" +
+                "Familiarization of electronic systems ( Any three systems)\n" +
+                "Setting up of a PA system with different microphones, loud speakers, mixer etc. \n" +
+                "Assembling and dismantling of desktop computer/laptop/mobile phones. \n" +
+                "Coil/Transformer winding. \n" +
+                "Identify the subsystems of TV, DTH, CCTV, Cable TV, CRO, Function generator etc. \n" +
+                "Screen printing and PCB pattern transfer \n" +
+                "Soldering & de-soldering of SMD using hot air soldering station. \n" +
+                "Introduction to robotics- Familiarization of components (motor, sensors, battery etc.) used in robotics and assembling of simple robotic configurations.";
         m21="";
-        m22="";
-        m23="";
+        m22="Expected outcome ";
+        m23="Student can identify the active and passive electronic components. Student gets hands-on assembling, testing, assembling, dismantling, fabrication and repairing systems by making use of the various tools and instruments available in the Electronics Workshop.";
         m31="";
         m32="";
         m33="";
@@ -1170,6 +1323,7 @@ public class TransitionFirstActivity extends Activity {
         m61="";
         m62="";
         m63="";
+        flag="23";
         i.putExtra("m11",m11);
         i.putExtra("m12",m12);
         i.putExtra("m13",m13);
@@ -1188,6 +1342,8 @@ public class TransitionFirstActivity extends Activity {
         i.putExtra("m61",m61);
         i.putExtra("m62",m62);
         i.putExtra("m63",m63);
+        i.putExtra("m009",m009);
+        i.putExtra("flag",flag);
 
         ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(
                 TransitionFirstActivity.this,Pair.create(mFabButton, "fab"), Pair.create(mHeader, "holder1"));
@@ -1197,12 +1353,32 @@ public class TransitionFirstActivity extends Activity {
 
         Intent i  = new Intent (TransitionFirstActivity.this,
                 TransitionSecActivity.class);
-        m11="";
+        m11="List Of Exercises / Experiments (Minimum Of 8 Mandatory)";
         m12="";
-        m13="";
+        m13="Decision making, branching and looping\n" +
+                "Variables , Expressions &Conditional statements \n" +
+                "Iteration statements (While , For etc)\n" +
+                "Function & Function calls\n" +
+                "Function calls, Math functions \n" +
+                "Parameters and arguments \n" +
+                "Adding new functions, Recursion. \n" +
+                "Strings\n" +
+                "String traversal \n" +
+                "String searching, Comparison \n" +
+                "Other important String methods.\n" +
+                "Lists, Tuples and Dictionaries\n" +
+                "Traversing List, List Operations \n" +
+                "Creation of Dictionary and Operations \n" +
+                "Lists and Tuples\n" +
+                "Files and Operations\n" +
+                "Files - defining, opening/closing, operations.\n" +
+                "Pickling. \n" +
+                "Micro Project: Students are expected to do a micro project by using Python, preferably related to the Web";
         m21="";
-        m22="";
-        m23="";
+        m22="Expected outcome  ";
+        m23="Students are able to identify common hardware components and their purpose \n" +
+                "Students gain sufficient awareness about latest software tools. \n" +
+                "Students are able to develop programs in Python for common problems of reasonable complexity.";
         m31="";
         m32="";
         m33="";
@@ -1215,6 +1391,7 @@ public class TransitionFirstActivity extends Activity {
         m61="";
         m62="";
         m63="";
+        flag="24";
         i.putExtra("m11",m11);
         i.putExtra("m12",m12);
         i.putExtra("m13",m13);
@@ -1233,6 +1410,8 @@ public class TransitionFirstActivity extends Activity {
         i.putExtra("m61",m61);
         i.putExtra("m62",m62);
         i.putExtra("m63",m63);
+        i.putExtra("m009",m009);
+        i.putExtra("flag",flag);
 
         ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(
                 TransitionFirstActivity.this,Pair.create(mFabButton, "fab"), Pair.create(mHeader, "holder1"));
@@ -1242,12 +1421,21 @@ public class TransitionFirstActivity extends Activity {
 
         Intent i  = new Intent (TransitionFirstActivity.this,
                 TransitionSecActivity.class);
-        m11="";
+        m11="List Of Exercises / Experiments (Minimum Of 8 Mandatory)";
         m12="";
-        m13="";
+        m13="Preparation of soap \n" +
+                "Determination of flash and fire point \n" +
+                "Preparation of Biodiesel \n" +
+                "Specific gravity measurement \n" +
+                "Fabrication of FRP laminates/ Study of filtration equipments \n" +
+                "Study of distillation column \n" +
+                "Study of absorption column \n" +
+                "Study of heat exchanger \n" +
+                "Study of size reduction equipments\n" +
+                "Preparation of Pigment";
         m21="";
-        m22="";
-        m23="";
+        m22="Expected Outcome:";
+        m23="Students will have a thorough understanding of the basic concepts that they learn in the theory paper “Introduction to Chemical Engineering”.";
         m31="";
         m32="";
         m33="";
@@ -1260,6 +1448,7 @@ public class TransitionFirstActivity extends Activity {
         m61="";
         m62="";
         m63="";
+        flag="25";
         i.putExtra("m11",m11);
         i.putExtra("m12",m12);
         i.putExtra("m13",m13);
@@ -1278,6 +1467,8 @@ public class TransitionFirstActivity extends Activity {
         i.putExtra("m61",m61);
         i.putExtra("m62",m62);
         i.putExtra("m63",m63);
+        i.putExtra("m009",m009);
+        i.putExtra("flag",flag);
 
         ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(
                 TransitionFirstActivity.this,Pair.create(mFabButton, "fab"), Pair.create(mHeader, "holder1"));
@@ -1287,24 +1478,31 @@ public class TransitionFirstActivity extends Activity {
 
         Intent i  = new Intent (TransitionFirstActivity.this,
                 TransitionSecActivity.class);
-        m11="";
+        m11="Design and its objectives; Design constraints, Design functions, Design means and Design from; Role of Science, Engineering and Technology in design; Engineering as a business proposition; Functional and Strength Designs. Design form, function and strength; How to initiate creative designs? Initiating the thinking process for designing a product of daily use. Need identification; Problem Statement; Market survey- customer requirements; Design attributes and objectives; Ideation; Brain storming approaches; arriving at solutions; Closing on to the Design needs. An Exercise in the process of design initiation. A simple problem is to be taken up to examine different solutions- Ceiling fan? Group Presentation and discussion. \n"
+                ;
         m12="";
         m13="";
-        m21="";
+        m21="Design process- Different stages in design and their significance; Defining the design space; Analogies and “thinking outside of the box”; Quality function deployment-meeting what the customer wants; Evaluation and choosing of a design. Design Communication; Realization of the concept into a configuration, drawing and model. Concept of “Complex is Simple”. Design for function and strength. Design detailing- Material selection, Design visualisation- Solid modelling; Detailed 2D drawings; Tolerancing; Use of standard items in design; Research needs in design; Energy needs of the design, both in its realization and in the applications. An exercise in the detailed design of two products (Stapler/ door/clock) \n"
+                ;
         m22="";
         m23="";
-        m31="";
+        m31="Design process- Different stages in design and their significance; Defining the design space; Analogies and “thinking outside of the box”; Quality function deployment-meeting what the customer wants; Evaluation and choosing of a design. Design Communication; Realization of the concept into a configuration, drawing and model. Concept of “Complex is Simple”. Design for function and strength. Design detailing- Material selection, Design visualisation- Solid modelling; Detailed 2D drawings; Tolerancing; Use of standard items in design; Research needs in design; Energy needs of the design, both in its realization and in the applications. An exercise in the detailed design of two products (Stapler/ door/clock) \n"
+                ;
         m32="";
         m33="";
-        m41="";
+        m41="Design for “X”; covering quality, reliability, safety, manufacturing/construction, assembly, maintenance, logistics, handling; disassembly; recycling; re-engineering etc. List out the design requirements(x) for designing a rocket shell of 3 meter diameter and 8 meter length. Design mineral water bottles that could be packed compactly for transportation.   \n"
+                ;
         m42="";
         m43="";
-        m51="";
+        m51="Product centred and user centred design. Product centred attributes and user centred attributes. Bringing the two closer. Example: Smart phone. Aesthetics and ergonomics. Value engineering, Concurrent engineering, Reverse engineering in design; Culture based design; Architectural designs; Motifs and cultural background; Tradition and design; Study the evolution of Wet grinders; Printed motifs; Role of colours in design. Make sharp corners and change them to smooth curves- check the acceptance. Examine the possibility of value addition for an existing product. \n"
+                ;
         m52="";
         m53="";
-        m61="";
+        m61="Modular design; Design optimization; Intelligent and autonomous products; User interfaces; communication between products; autonomous products; internet of things; human psychology and the advanced products. Design as a marketing tool; Intellectual Property rights – Trade secret; patent; copy-right; trademarks; product liability. Group presentation of any such products covering all aspects that could make or mar it.\n"
+                ;
         m62="";
         m63="";
+        flag="26";
         i.putExtra("m11",m11);
         i.putExtra("m12",m12);
         i.putExtra("m13",m13);
@@ -1323,6 +1521,8 @@ public class TransitionFirstActivity extends Activity {
         i.putExtra("m61",m61);
         i.putExtra("m62",m62);
         i.putExtra("m63",m63);
+        i.putExtra("flag",flag);
+
 
         ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(
                 TransitionFirstActivity.this,Pair.create(mFabButton, "fab"), Pair.create(mHeader, "holder1"));

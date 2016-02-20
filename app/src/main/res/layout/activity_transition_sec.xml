@@ -9,6 +9,18 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context=".MyActivity"
     >
+    <Button
+        android:id="@+id/fab_button"
+        android:layout_width="@dimen/fab_size"
+        android:layout_height="@dimen/fab_size"
+        android:text="INFO"
+        android:layout_marginTop="-26dp"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/activity_transition_header"
+        android:layout_alignParentEnd="true"
+        android:elevation="5dp"
+        android:background="@drawable/ripple_round"
+        android:textColor="#ffffffff" />
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/activity_transition_header"
@@ -49,7 +61,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=""
-            android:id="@+id/tm12" />
+            android:id="@+id/tm12"
+            android:textColor="#3F51B5" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -77,7 +90,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=""
-            android:id="@+id/tm22" />
+            android:id="@+id/tm22"
+            android:textColor="#3F51B5" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -103,7 +117,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=""
-            android:id="@+id/tm32" />
+            android:id="@+id/tm32"
+            android:textColor="#3F51B5" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -129,7 +144,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=""
-            android:id="@+id/tm42" />
+            android:id="@+id/tm42"
+            android:textColor="#3F51B5" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -155,7 +171,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=""
-            android:id="@+id/tm52" />
+            android:id="@+id/tm52"
+            android:textColor="#3F51B5" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -181,13 +198,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=""
-            android:id="@+id/tm62" />
+            android:id="@+id/tm62"
+            android:textColor="#3F51B5" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=""
             android:id="@+id/tm63" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView13" />
 
     </LinearLayout>
 
