@@ -27,5 +27,12 @@
     </string-array>
 
     <string name="title_activity_elevation_sample">ElevationSampleActivity</string>
+    <string name="mod1.1"></string>
+    <string name="mod1">Module I</string>
+    <string name="mod2">Module II</string>
+    <string name="mod3">Module III</string>
+    <string name="mod4">Module IV</string>
+    <string name="mod5">Module V</string>
+    <string name="mod6">Module VI</string>
 
 </resources>
